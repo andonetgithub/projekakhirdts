@@ -8,55 +8,65 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@drawable/workspacepotrait"
+    android:gravity="center"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/txtusername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Masukkan Username"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="45dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/loginusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="text"
+        android:textColor="@color/white"
         android:minHeight="48dp"
+        android:hint="Username"
+        android:textColorHint="@color/cardview_dark_background"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/txtpass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Masukkan Password"
-        android:textSize="16sp"
-        android:layout_marginBottom="8dp"/>
-
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/loginpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         android:minHeight="48dp"
+        android:hint="Password"
+        android:textColorHint="@color/cardview_dark_background"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="12dp"/>
 
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/btnaccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"/>
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:text="I don't have account" />
 
 </LinearLayout>
